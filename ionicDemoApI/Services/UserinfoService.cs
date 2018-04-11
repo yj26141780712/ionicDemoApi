@@ -30,14 +30,14 @@ namespace ionicDemoApI.Services
                          new User
                         {
                             Id=2,
-                            Username="yangjie1",
+                            Username="yangjie2",
                             Name="杨杰1",
                             Password="Aa123"
                         },
                         new User
                         {
                             Id=3,
-                            Username="yangjie1",
+                            Username="yangjie3",
                             Name="杨杰1",
                             Password="Aa123"
                         }

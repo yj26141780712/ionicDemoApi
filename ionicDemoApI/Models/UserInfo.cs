@@ -36,4 +36,23 @@ namespace ionicDemoApI.Models
     {
 
     }
+
+    public class Function
+    {
+        public int Id { get; set; }
+        public int ParentId { get; set; }
+        public string ModuleName { get; set; }
+        public string path { get; set; }
+        public string row { get; set; }
+        public string col { get; set; }
+        public ICollection<Function> ChildFunc { get; set;}
+    }
+
+    public class ChildFunction
+    {
+        public int Id { get; set; }
+        public int ParentId { get; set; }
+        public string ModuleName { get; set; }
+        public string path { get; set; }
+    }
 }

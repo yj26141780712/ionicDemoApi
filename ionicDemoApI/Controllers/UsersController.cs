@@ -20,6 +20,7 @@ namespace ionicDemoApI.Controllers
             }
             return Ok(role.Users);
         }
+  
         [HttpGet("{roleId}/users/{id}")]
         public IActionResult GetUser(int roleId, int id)
         {
@@ -33,6 +34,22 @@ namespace ionicDemoApI.Controllers
             {
                 return NotFound();
             }
+            return Ok(user);
+        }
+
+        [HttpGet("{roleId}/user")]
+        public IActionResult GetUser(int roleId, string username, string password)
+        {
+            var role = UserinfoService.Current.Roles.SingleOrDefault(p => p.Id == roleId);
+            if (role == null)
+            {
+                return null;
+            }
+            var user = role.Users.SingleOrDefault(p => p.Username == username && p.Password == password);
+            //if (user == null)
+            //{
+            //    return NotFound();
+            //}
             return Ok(user);
         }
     }
