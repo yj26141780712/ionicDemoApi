@@ -10,6 +10,7 @@ namespace ionicDemoApI.Services
     {
         public static FunctionService Current { get; } = new FunctionService();
         public List<Function> Functions { get; }
+        public List<Machine> Machines { get; }
         public FunctionService()
         {
             Functions = new List<Function>
@@ -41,6 +42,88 @@ namespace ionicDemoApI.Services
                     }
                 },
 
+            };
+            Machines = new List<Machine>
+            {
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="时间自动",
+                    Motion="开模1段"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="时间自动",
+                    Motion="开模1段"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="时间自动",
+                    Motion="开模1段"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="时间自动",
+                    Motion="开模1段"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="离线",
+                    Motion="无"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="离线",
+                    Motion="无"
+                },
+                new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="离线",
+                    Motion="无"
+                },new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                     State="离线",
+                    Motion="无"
+                },new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                     State="离线",
+                    Motion="无"
+                },new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                     State="离线",
+                    Motion="无"
+                },new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                    State="离线",
+                    Motion="无"
+                },new Machine
+                {
+                    Id=1,
+                    SerialNumber="ty-00001",
+                     State="离线",
+                    Motion="无"
+                },
             };
         }
     }
