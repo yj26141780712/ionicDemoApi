@@ -32,6 +32,17 @@ namespace ionicDemoApI.Models
         public string Des { get; set; }
     }
 
+    public class RoleModification
+    {
+        public int Id { get; set; }
+        [Display(Name = "角色名称")]
+        [Required(ErrorMessage = "{0}是必填项")]
+        [StringLength(10, MinimumLength = 2, ErrorMessage = "{0}的长度应该不小于{2}, 不大于{1}")]
+        public string Name { get; set; }
+        public string Des { get; set; }
+       // public int MyProperty { get; set; }
+    }
+
     public class UserCreation
     {
 
